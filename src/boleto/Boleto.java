@@ -5,7 +5,14 @@ import java.util.Date;
 public class Boleto {
 	private String uuid;
 	private Date data;
-	private Float valorPago;
+	private Integer valorPago;
+
+	public Boleto(String uuid, Date data, Integer valorPago) {
+		this.uuid = uuid;
+		this.data = data;
+		this.valorPago = valorPago;
+
+	}
 
 	public String getUuid() {
 		return uuid;
@@ -19,12 +26,12 @@ public class Boleto {
 	public void setData(Date data) {
 		this.data = data;
 	}
-	public Float getValor() {
+	
+	public Integer getValor() {
 		return valorPago;
 	}
-	public void setValor(Float valorPago) {
+
+	public void setValor(Integer valorPago) {
 		this.valorPago = valorPago;
 	}
-
-
 }

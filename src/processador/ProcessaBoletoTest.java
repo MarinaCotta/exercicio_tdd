@@ -1,14 +1,15 @@
-package boleto;
+package processador;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Date;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import boleto.Boleto;
 import fatura.Fatura;
 import processador.ProcessaBoleto;
 
